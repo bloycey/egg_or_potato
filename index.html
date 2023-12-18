@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barrio&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥚</text></svg>"
+		/>
+		<title>Egg or Potato??</title>
+	</head>
+	<body>
+		<header data-step="1">
+			<div>
+				<h1>Egg or potato?</h1>
+				<h2>An important psychological study.</h2>
+				<button class="next-btn start" type="button">Start Quiz</button>
+			</div>
+		</header>
+		<form id="egg-form">
+			<fieldset class="hidden" data-step="2">
+				<div>
+					<legend>Do you crack under pressure?</legend>
+					<input
+						type="radio"
+						name="crack"
+						value="1"
+						id="crack-yes"
+						checked
+					/>
+					<label for="crack-yes">Yes</label>
+					<br />
+					<input type="radio" name="crack" value="0" id="crack-no" />
+					<label for="crack-no">No</label>
+					<br />
+					<button class="next-btn" type="button">Next</button>
+				</div>
+			</fieldset>
+			<fieldset class="hidden" data-step="3">
+				<div>
+					<legend>
+						Do you find you are an EGGcellent performer under
+						pressure?
+					</legend>
+					<input
+						type="radio"
+						name="eggcellent"
+						value="-1"
+						id="eggcellent-yes"
+						checked
+					/>
+					<label for="eggcellent-yes">Yes</label>
+					<br />
+					<input
+						type="radio"
+						name="eggcellent"
+						value="0"
+						id="eggcellent-no"
+					/>
+					<label for="eggcellent-no">No</label>
+					<br />
+					<button class="next-btn" type="button">Next</button>
+				</div>
+			</fieldset>
+			<fieldset class="hidden" data-step="4">
+				<div>
+					<legend>
+						YUKON continue to strive for GOLD despite obstacles?
+					</legend>
+					<input
+						type="radio"
+						name="yukon"
+						value="-1"
+						id="yukon-yes"
+						checked
+					/>
+					<label for="yukon-yes">Yes</label>
+					<br />
+					<input type="radio" name="yukon" value="0" id="yukon-no" />
+					<label for="yukon-no">No</label>
+					<br />
+					<button class="next-btn" type="button">Next</button>
+				</div>
+			</fieldset>
+			<fieldset class="hidden" data-step="5">
+				<div>
+					<legend>
+						Do you have a CHIP on your shoulder due to previous
+						hardship?
+					</legend>
+					<input
+						type="radio"
+						name="chip"
+						value="1"
+						id="chip-yes"
+						checked
+					/>
+					<label for="chip-yes">Yes</label>
+					<br />
+					<input type="radio" name="chip" value="0" id="chip-no" />
+					<label for="chip-no">No</label>
+					<br />
+					<button class="next-btn" type="button">Next</button>
+				</div>
+			</fieldset>
+			<fieldset class="hidden" data-step="6">
+				<div>
+					<legend>Does pressure SCRAMBLE your thoughts?</legend>
+					<input
+						type="radio"
+						name="scramble"
+						value="1"
+						id="scramble-yes"
+						checked
+					/>
+					<label for="scramble-yes">Yes</label>
+					<br />
+					<input
+						type="radio"
+						name="scramble"
+						value="0"
+						id="scramble-no"
+					/>
+					<label for="scramble-no">No</label>
+					<br />
+					<button class="results-btn" type="submit">
+						See Results
+					</button>
+				</div>
+			</fieldset>
+			<fieldset class="hidden results" data-step="7">
+				<div>
+					<h3 class="results-title">Results</h3>
+					<p>
+						<strong>You are <span id="result"></span>!</strong>
+					</p>
+					<p id="description"></p>
+					<button class="next-btn" type="button">Start Over</button>
+				</div>
+			</fieldset>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>

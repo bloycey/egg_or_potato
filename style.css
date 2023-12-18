@@ -1,0 +1,139 @@
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #222222;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: "Barrio";
+}
+
+button,
+input,
+label {
+	cursor: pointer;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html,
+body {
+	font-size: 18px;
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 24px;
+}
+
+header h1 {
+	font-size: 6rem;
+	line-height: 1;
+	margin-bottom: 0.5rem;
+}
+
+img.bottom-right {
+	position: fixed;
+	width: 100px;
+}
+
+fieldset legend {
+	font-size: 2rem;
+	line-height: 1.2;
+	margin-bottom: 2rem;
+}
+
+header h2 {
+	font-size: 1.25rem;
+	opacity: 0.7;
+	font-weight: normal;
+	margin-bottom: 1.5rem;
+}
+
+fieldset {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	border: 0;
+}
+
+input[type="radio"] {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0.5rem;
+}
+
+label {
+	margin-left: 0.5rem;
+	vertical-align: middle;
+	font-size: 1.5rem;
+	line-height: 1;
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+.hidden {
+	display: none !important;
+}
+
+fieldset.results strong {
+	display: block;
+	font-size: 2rem;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+
+#description {
+	font-size: 1.125rem;
+	line-height: 1.5;
+}
+
+.results-title {
+	margin-bottom: 1rem;
+}
+
+.next-btn,
+.results-btn {
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+	fieldset {
+		width: 600px;
+		margin: 0 auto;
+	}
+}
