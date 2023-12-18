@@ -2,6 +2,7 @@ html {
 	box-sizing: border-box;
 	font-family: sans-serif;
 	color: #222222;
+	accent-color: blue;
 }
 
 *,
@@ -34,6 +35,19 @@ label {
 	cursor: pointer;
 }
 
+button {
+	background-color: #222222;
+	border: 0;
+	color: #ffffff;
+	transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+	background-color: blue;
+	filter: brightness(1.5);
+	transform: scale(1.1);
+}
+
 ol,
 ul {
 	list-style: none;
@@ -46,7 +60,7 @@ img {
 
 html,
 body {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 header {
@@ -128,13 +142,15 @@ fieldset.results strong {
 
 .results-title {
 	margin-bottom: 1rem;
+	color: blue;
 }
 
 .next-btn,
 .results-btn {
 	margin-top: 1rem;
-	padding: 0.5rem 1rem;
-	font-size: 1rem;
+	padding: 1rem 2rem;
+	font-size: 1.25rem;
+	border-radius: 5px;
 }
 
 @media (min-width: 992px) {
